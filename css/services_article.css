@@ -1,0 +1,137 @@
+@import url(./general.css);
+
+#services > section:first-child {
+    width: 100%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services > section > p:first-child {
+    margin-bottom: 10px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    color: var(--blue_primary);
+
+    text-transform: uppercase;
+}
+
+#services > section > h1 {
+    margin-bottom: 20px;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    color: var(--grey);
+}
+
+#services > section > p:last-child {
+    width: 530px;
+    
+    display: inline-block;
+
+    text-align: center;
+    font-size: 14px;
+
+    color: grey;
+}
+
+
+/* SECCION DE LAS "CARDS" */
+
+#services > section:last-child {
+    width: 1300px;
+
+    margin: auto;
+    margin-bottom: 5em;
+
+    /* border: 1px solid black; */
+
+    display: grid;
+    grid-gap: 1.8em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.services_cards {
+    position: relative;
+
+    width: auto;
+    min-height: 390px;
+    padding: 3em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 3px;
+    box-shadow: 0 0 8px 3px rgba(236, 236, 236, 1);
+}
+
+.services_cards::after {
+    content: "";
+
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+
+    width: 0;
+    height: 4px;
+
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    background-color: var(--blue_primary);
+
+    transition: width .6s;
+}
+
+.services_cards:hover::after{
+    width: 100%;
+}
+
+.services_cards h1 {
+    font-size: 45px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--blue_primary);
+}
+
+.services_cards h1 + p {
+
+    font-size: 26px;
+    font-weight: bold;
+
+    color: var(--grey);
+}
+
+.services_cards p {
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.services_cards a {
+    width: 160px;
+    padding: .75em 1.7em;
+    border-radius: 5px;
+
+    display: inline;
+    
+    color: var(--ligth);
+    background-color: var(--blue_primary);
+    
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    transition: background-color .3s;
+}
+
+.services_cards a:hover {
+    background-color: rgba(1, 46, 152, 1);
+}

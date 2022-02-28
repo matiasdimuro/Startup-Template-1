@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --blue_primary: #0052cc;
+    --blue_secondary: rgba(73, 118, 214, 0.45);
+    --light: #fff;
+    --grey: rgba(36, 36, 36, 1);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+    outline: none;
+    
+    color: var(--light);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+
+    scroll-behavior: smooth;
+}
