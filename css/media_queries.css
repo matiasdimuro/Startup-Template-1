@@ -64,6 +64,8 @@
     }
 }
 
+/* Breakpoint -> Hamburguer Menu */
+
 @media screen and (max-width: 993px) {
 
     /* HEADER */
@@ -170,6 +172,40 @@
         margin-bottom: 2em;
     }
 
+    /* VIDEO SECTION */
+
+    #video_article {
+        height: 600px;
+    }
+
+    #video_article section {
+        height: 390px;
+        width: 90%;
+    }
+
+    #points {
+        width: 20px;
+    }
+
+    #circle {
+        width: 40px;
+        right: -20px;
+    }
+
+    #video_container > p {
+        font-size: 14px;
+    }
+
+    #video_container > h1 {
+        font-size: 20px;
+    }
+
+    #video_container > h1 + p {
+        width: 70%;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
 }
 
 @media screen and (max-width: 755px) {
@@ -236,5 +272,25 @@
         display: block;
         font-size: 14px;
     }
+}
 
+@media screen and (max-width: 380px) {
+
+    /* VIDEO SECTION */
+
+    #video_container > p {
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+    }
+
+    #video_container > h1 {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+    }
+
+    #video_article section {
+        min-height: 500px;
+    }
 }
