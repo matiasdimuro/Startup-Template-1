@@ -1,14 +1,16 @@
 @import url(./general.css);
 
+/* 1° BREAKPOINT PARA ADAPTAR SECCION DE SERVICIOS Y TIPS */
+
 @media screen and (min-width: 993px) and (max-width: 1355px) {
 
-    /* SECCION DE CARDS */
+    /* SERVICES CARDS */
     
     #services > section:last-child {
         width: 1100px;
     }
 
-    /* SECCION DE TIPS  */
+    /* TIPS  */
 
     #services_tips main {
         min-width: 1100px;
@@ -28,15 +30,17 @@
 
 }
 
+/* 2° BREAKPOINT PARA ADAPTAR SECCION DE SERVICIOS Y TIPS */
+
 @media screen and (min-width: 994px) and (max-width: 1155px) {
 
-    /* SECCION DE CARDS */
+    /* SERVICES CARDS */
     
     #services > section:last-child {
         width: 900px;
     }
 
-    /* SECCION DE TIPS  */
+    /* TIPS */
 
     #services_tips main {
         min-width: 900px;
@@ -64,11 +68,20 @@
     }
 }
 
-/* Breakpoint -> Hamburguer Menu */
+/* BREAKPOINT:
+    1) OCULTAR NAVBAR Y MOSTRAR "HAMBURGUER MENU".
+    2) ACHICO ALTO DEL "HOME".
+
+    ** 3° BREAKPOINT PARA ADAPTAR SECCION DE SERVICIOS Y TIPS **
+    3) ACHICO ANCHO DE LA SECCION "SERVICES" -> RESTO UNA COLUMNA A LA GRILLA DE "CARDS".
+    4) COLOCO LOS TIPS POR DEBAJO DE LA IMAGEN (AUMENTO SU TAMAÑO).
+
+    5) DISMINUYO TAMAÑO DEL TEXTO DEL CONTENEDOR "VIDEO".
+*/
 
 @media screen and (max-width: 993px) {
 
-    /* HEADER */
+    /* HEADER Y MENU DEL NAVBAR*/
 
     header {
         /* min-height: 8.5vh; */
@@ -139,14 +152,14 @@
         display: none;
     }
 
-    /* SECCION DE CARDS */
+    /* SERVICES CARDS */
     
     #services > section:last-child {
         width: 700px;
         grid-template-columns: 1fr 1fr;
     }
 
-    /* SECCION DE SERVICES TIPS */
+    /* TIPS */
 
     #services_tips main {
         min-width: auto;
@@ -208,24 +221,30 @@
 
 }
 
+/* 3° BREAKPOINT PARA ADAPTAR SECCION DE SERVICIOS Y TIPS:
+    1) ACHICO ANCHO DE LA SECCION "SERVICES" -> RESTO UNA COLUMNA A LA GRILLA DE "CARDS".
+    2) ACHICO TAMAÑO DE LOS TIPS Y LA IMAGEN.
+*/
+
 @media screen and (max-width: 755px) {
 
     /* SECCION DE CARDS */
     
     #services > section:last-child {
-        width: 450px;
+        width: 90%;
         grid-template-columns: 1fr;
     }
 
     /* SECCION DE SERVICES TIPS */
 
     #services_tips img {
-        width: 450px;
+        /* max-width: 450px; */
+        width: 90vw;
         margin: auto;
     }
 
     #services_tips section:last-child {
-        width: 500px;
+        max-width: 500px;
         align-items: center;
     }
 
@@ -241,6 +260,8 @@
         font-size: 20px;
     }
 }
+
+/* BREAKPOINT: OCULTO BOTON "Get In Touch" DEL HEADER - ACHICO ARTICULO "MENU" Y SU CONTENIDO. */
 
 @media screen and (max-width: 575px) {
 
@@ -273,6 +294,8 @@
         font-size: 14px;
     }
 }
+
+/* BREAKPOINT: ADAPTO TEXTO DENTRO DEL CONTENEDOR "VIDEO". */
 
 @media screen and (max-width: 380px) {
 

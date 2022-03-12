@@ -31,7 +31,7 @@
 }
 
 #services > section > p:last-child {
-    width: 530px;
+    max-width: 530px;
     
     display: inline-block;
 

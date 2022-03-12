@@ -1,0 +1,154 @@
+@import url(./general.css);
+
+#pricing_plans_container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+
+    /* border: 1px solid black; */
+}
+
+#pricing_plans_container > section {
+    width: 550px;
+    margin: auto;
+    margin-bottom: 80px;
+
+    text-align: center;
+}
+
+#pricing_plans_container > section > p:first-child {
+    margin-bottom: 10px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    color: var(--blue_primary);
+
+    text-transform: uppercase;
+}
+
+#pricing_plans_container > section > h1 {
+    margin-bottom: 15px;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    color: var(--grey);
+}
+
+#pricing_plans_container > section > h1 + p {
+    /* max-width: 530px; */
+    
+    display: inline-block;
+
+    text-align: center;
+    font-size: 16px;
+
+    color: grey;
+}
+
+#pricing_plans {
+    width: 1300px;
+    min-height: 520px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+}
+
+.plan {
+    border-radius: 10px;
+    border: 1px solid rgba(225, 220, 220, 1);
+
+    color: blue;
+}
+
+.plan_type {
+    width: 100%;
+    min-height: 50%;
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(225, 220, 220, 1);
+}
+
+.plan_type p:not(.plan_type p + p) {
+    margin-bottom: 20px;
+
+    font-weight: bold;
+    font-size: 17px;
+
+    color: var(--grey);
+}
+
+.plan_type p + p {
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.plan_type span {
+    font-size: 45px;
+    font-weight: bold;
+
+    color: black;
+}
+
+.plan_type a {
+    width: 100%;
+    margin-top: 20px;
+    padding: .7em;
+
+    border-radius: 5px;
+    
+    display: inline-block;
+
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--light);
+    background-color: var(--blue_primary);
+}
+
+.plan_tips {
+
+    padding: 2em;
+
+}
+
+.plan_tips p:not(.plan_tips li p) {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: black;
+}
+
+.plan_tips ul li {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.plan_tips ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.plan_tips ul li p {
+    color: grey;
+}
+
+.plan_tips ul li img {
+    width: 15px;
+    margin-right: 10px;
+    place-self: center;
+}
