@@ -28,6 +28,11 @@
         width: 330px;
     }
 
+    /* PRICE ARTICLE */
+    #pricing_plans {
+        width: 1100px;
+    }
+
 }
 
 /* 2° BREAKPOINT PARA ADAPTAR SECCION DE SERVICIOS Y TIPS */
@@ -65,6 +70,12 @@
 
     .tips_items > span + div {
         width: 260px;
+    }
+
+    /* PRICE ARTICLE */
+
+    #pricing_plans {
+        width: 900px;
     }
 }
 
@@ -219,6 +230,15 @@
         font-size: 13px;
     }
 
+    /* PRICE ARTICLE */
+
+    #pricing_plans {
+        width: 700px;
+
+        grid-template-columns: 1fr 1fr;
+        row-gap: 25px;
+    }
+
 }
 
 /* 3° BREAKPOINT PARA ADAPTAR SECCION DE SERVICIOS Y TIPS:
@@ -258,6 +278,14 @@
         border-radius: 20px;
         
         font-size: 20px;
+    }
+
+    /* PRICE ARTICLE */
+
+    #pricing_plans {
+        width: 90vw;
+
+        grid-template-columns: 1fr;
     }
 }
 

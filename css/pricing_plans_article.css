@@ -4,12 +4,10 @@
     width: 100%;
     height: auto;
     margin-bottom: 100px;
-
-    /* border: 1px solid black; */
 }
 
 #pricing_plans_container > section {
-    width: 550px;
+    max-width: 550px;
     margin: auto;
     margin-bottom: 80px;
 
@@ -62,6 +60,13 @@
     border: 1px solid rgba(225, 220, 220, 1);
 
     color: blue;
+
+    transition: box-shadow .35s;
+    transition-delay: .1s;
+}
+
+.plan:hover {
+    box-shadow: 0 0 10px 3px rgba(227, 227, 227, 0.8);
 }
 
 .plan_type {
@@ -114,6 +119,12 @@
 
     color: var(--light);
     background-color: var(--blue_primary);
+
+    transition: background-color .3s;
+}
+
+.plan_type a:hover {
+    background-color: rgba(1, 46, 152, 1);
 }
 
 .plan_tips {
