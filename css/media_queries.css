@@ -33,6 +33,10 @@
         width: 1100px;
     }
 
+    /* WORKERS */
+    #team_workers {
+        width: 1100px;
+    }
 }
 
 /* 2° BREAKPOINT PARA ADAPTAR SECCION DE SERVICIOS Y TIPS */
@@ -76,6 +80,23 @@
 
     #pricing_plans {
         width: 900px;
+    }
+
+    /* WORKERS */
+    #team_workers {
+        width: 900px;
+    }
+
+    .worker {
+        height: auto;
+    }
+
+    .photo {
+        height: 220px;
+    }
+
+    .name {
+        padding: 1em 2em;
     }
 }
 
@@ -239,6 +260,13 @@
         row-gap: 25px;
     }
 
+    /* WORKERS */
+    #team_workers {
+        width: 700px;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 /* 3° BREAKPOINT PARA ADAPTAR SECCION DE SERVICIOS Y TIPS:
@@ -286,6 +314,19 @@
         width: 90vw;
 
         grid-template-columns: 1fr;
+    }
+
+    /* WORKERS */
+    #team_workers {
+        width: 70vw;
+        min-height: 900px;
+        
+
+        grid-template-columns: 1fr;
+    }
+
+    .photo {
+        max-height: 400px;
     }
 }
 
