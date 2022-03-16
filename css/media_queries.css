@@ -379,6 +379,10 @@
     }
 
     /* SUBSCRIBE SECTION */
+    #suscribe_article {
+        padding-bottom: 70px;
+    }
+
     #suscribe_article form {
         width: 90%;
     }
