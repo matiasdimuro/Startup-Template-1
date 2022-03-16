@@ -1,0 +1,102 @@
+@import url(./general.css);
+
+#suscribe_article {
+    width: 100%;
+    height: 420px;
+
+    background-color: var(--blue_primary);
+}
+
+#suscribe_article section {
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#suscribe_article h1 {
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    font-size: 36px;
+
+    color: var(--light);
+}
+
+#suscribe_article p {
+    max-width: 350px;
+    margin-bottom: 40px;
+
+    display: inline-block;
+
+    text-align: center;
+    font-size: 17px;
+}
+
+#suscribe_article form {
+    position: relative;
+
+    width: 500px;
+    height: auto;
+}
+
+#suscribe_article input {
+    width: 100%;
+    height: 60px;
+    padding-left: 1em;
+
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid var(--light);
+
+    font-size: 17px;
+
+    background-color: inherit;
+}
+
+#suscribe_article input::placeholder {
+    color: var(--light);
+}
+
+#suscribe_article a {
+    position: absolute;
+    top: 50%;
+    right: 7.5px;
+    transform: translateY(-50%);
+
+    width: 30%;
+    height: 45px;
+    /* padding: 1em 1.5em; */
+    border-radius: 22.5px;
+
+    display: inline-block;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+
+    text-align: center;
+    line-height: 45px;
+
+    color: var(--blue_primary);
+    background-color: var(--light);
+    
+}
+
+#suscribe_article a:hover {
+    color: rgba(1, 46, 152, 1);
+}
+
+#suscribe_article a:focus {
+    color: var(--light);
+    background-color: rgba(1, 46, 152, 1);
+}

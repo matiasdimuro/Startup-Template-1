@@ -2,13 +2,13 @@
 
 #team_article {
     width: 100%;
-    height: 820px;
+    min-height: 820px;
 
     background-color: #e6e6e659;;
 }
 
 #team_article > section {
-    width: 60%;
+    width: 100%;
     margin: auto;
     padding-top: 100px;
     margin-bottom: 100px;
@@ -115,8 +115,12 @@
 
 .name {
     width: 100%;
-    height: auto;
-    padding: 10px 20px;
+    height: 25%;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .name p:not(:last-child) {

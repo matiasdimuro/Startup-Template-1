@@ -19,7 +19,7 @@
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
 
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 body {

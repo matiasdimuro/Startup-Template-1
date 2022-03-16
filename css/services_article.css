@@ -28,6 +28,8 @@
     font-weight: bold;
 
     color: var(--grey);
+
+    text-align: center;
 }
 
 #services > section > p:last-child {
