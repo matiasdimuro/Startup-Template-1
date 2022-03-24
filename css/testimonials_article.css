@@ -1,0 +1,139 @@
+@import url(./general.css);
+
+#testimonials_article {
+    position: relative;
+
+    width: 100%;
+    min-height: 500px;
+
+    display: grid;
+    place-items: center;
+
+    background-color: var(--light);
+}
+
+#testimonials_slider {
+    min-width: 400px;
+    max-width: 810px;
+    height: 350px;
+}
+
+#testim-1, #testim-2, #testim-3 {
+    display: none;
+}
+
+#testimonials_slider label {
+    position: absolute;
+    bottom: 90px;
+    transform: translateX(-50%);
+
+    width: 15px;
+    height: 6px;
+    border-radius: 3px;
+
+    cursor: pointer;
+    z-index: 100;
+
+    background-color: rgba(56, 97, 157, 0.39);
+    
+    transition: all .2s;
+}
+
+/* Posicion de Botones del Slider  */
+#testimonials_slider label:nth-of-type(1) {
+    left: calc(50% - 25px);
+}
+#testimonials_slider label:nth-of-type(2) {
+    left: 50%;
+}
+#testimonials_slider label:nth-of-type(3) {
+    left: calc(50% + 20px);
+}
+
+/* Accion de Cada Boton del Slider */
+#testim-1:checked ~ label:nth-of-type(1) {
+    left: calc(50% - 25px);
+    width: 25px;
+    background-color: var(--blue_primary);
+}
+#testim-2:checked ~ label:nth-of-type(2) {
+    width: 25px;
+    background-color: var(--blue_primary);
+}
+#testim-2:checked ~ label:nth-of-type(3) {
+    left: calc(50% + 25px);
+}
+#testim-3:checked ~ label:nth-of-type(3) {
+    width: 25px;
+    background-color: var(--blue_primary);
+    left: calc(50% + 28px);
+}
+
+#testim-2:checked ~ #slide_container > section {
+    transform: translateX(-100%);
+}
+#testim-3:checked ~ #slide_container > section {
+    transform: translateX(-200%);
+}
+
+
+#slide_container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+
+    display: flex;
+}
+
+
+#slide_container section {
+    min-width: 100%;
+    max-width: 100%;
+    height: inherit;
+
+    text-align: center;
+
+    color: brown;
+    /* border: 1px solid brown; */
+
+    transition: all .6s;
+}
+
+#slide_container section img:first-child {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+#slide_container section p {
+    margin-bottom: 25px;
+    color: grey;
+}
+
+#slide_container section p:first-of-type {
+    display: block;
+    max-width: 80%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#slide_container section .photo {
+    width: 80px;
+    height:  80px;
+    border-radius: 35px;
+}
+
+#slide_container > section > .name_test {
+    color: black;
+    margin: 10px;
+}
+
+#slide_container > section > .name_test + p {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

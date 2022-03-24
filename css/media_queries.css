@@ -404,6 +404,20 @@
 
         border-radius: 25px;
     }
+
+    /* TESTIMONIALS SECTION */
+    #testimonials_slider {
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    #testimonials_slider label {
+        bottom: 60px;
+    }
+
+    #slide_container section p:first-of-type {
+        font-size: 14px;
+    }
 }
 
 /* BREAKPOINT: ADAPTO TEXTO DENTRO DEL CONTENEDOR "VIDEO". */
