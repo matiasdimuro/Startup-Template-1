@@ -4,7 +4,7 @@
     width: 100%;
     min-height: 820px;
 
-    background-color: #e6e6e659;;
+    background-color: #e6e6e659;
 }
 
 #team_article > section {
@@ -29,7 +29,6 @@
 
 #team_article > section > h1 {
     margin-bottom: 15px;
-    
 
     font-size: 35px;
     font-weight: bold;

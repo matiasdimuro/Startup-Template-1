@@ -1,0 +1,132 @@
+@import url(./general.css);
+
+#contact_article {
+    width: 100%;
+    min-height: 780px;
+    padding: 100px 1em;
+
+    background-color: #e6e6e659;
+}
+
+#contact_article > section:first-of-type {
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 55px;
+
+    text-align: center;
+}
+#contact_article > section:first-of-type > p:first-child {
+    margin-bottom: 5px;
+
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: var(--blue_primary);
+}
+#contact_article > section:first-of-type > h1 {
+    margin-bottom: 10px;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    color: var(--grey);
+}
+#contact_article > section:first-of-type > p:last-of-type {
+    max-width: 530px;
+    display: inline-block;
+
+    text-align: center;
+    font-size: 16px;
+
+    color: grey;
+}
+
+
+#contact_form {
+    position: relative;
+
+    width: 1300px;
+    height: 350px;
+    margin: auto;
+
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+
+    /* border: 1px solid red; */
+}
+
+#contact_form form {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .8fr .8fr 3fr;
+}
+#contact_form input, #contact_form textarea {
+    height: 100%;
+    padding: 1em 1.3em;
+    display: inline-block;
+
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgba(225, 220, 220, 1);
+
+    font-size: 16px;
+    color: #000;
+}
+#contact_form textarea {
+    min-height: 100%;
+    resize: none;
+    grid-column: 1 / span 2;
+}
+#contact_form input::placeholder, #contact_form textarea::placeholder {
+    color: grey;
+}
+#contact_form input:focus, #contact_form textarea:focus {
+    border-color: var(--blue_primary);
+}
+
+
+#contact_form aside {
+    border: 1px solid red;;
+}
+
+#contact_form aside p:not(.item_contact) {
+    font-size: 15px;
+    color: rgb(17, 17, 17);
+}
+
+#contact_form aside .item_contact {
+    font-size: 18px;
+    font-weight: bold;
+
+    color: rgb(17, 17, 17);
+}
+
+
+#contact_form a {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+
+    padding: .9em 1.6em;
+    border-radius: 5px; 
+    display: inline-block;
+
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--light);
+    background-color: var(--blue_primary);
+
+    transition: background-color .3s;
+}
+#contact_form a:hover {
+    background-color: rgba(1, 46, 152, 1);
+}
