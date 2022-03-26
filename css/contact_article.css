@@ -1,14 +1,17 @@
 @import url(./general.css);
 
 #contact_article {
-    width: 100%;
-    min-height: 780px;
-    padding: 100px 1em;
-
     background-color: #e6e6e659;
 }
 
-#contact_article > section:first-of-type {
+#contact_article main {
+    width: 100%;
+    min-height: 780px;
+    margin: auto;
+    padding: 100px 1em;
+}
+
+#contact_article  section:first-of-type {
     width: 40%;
     height: auto;
     margin: auto;
@@ -16,7 +19,7 @@
 
     text-align: center;
 }
-#contact_article > section:first-of-type > p:first-child {
+#contact_article  section:first-of-type > p:first-child {
     margin-bottom: 5px;
 
     font-size: 16px;
@@ -25,7 +28,7 @@
 
     color: var(--blue_primary);
 }
-#contact_article > section:first-of-type > h1 {
+#contact_article  section:first-of-type > h1 {
     margin-bottom: 10px;
 
     font-size: 35px;
@@ -33,7 +36,7 @@
 
     color: var(--grey);
 }
-#contact_article > section:first-of-type > p:last-of-type {
+#contact_article  section:first-of-type > p:last-of-type {
     max-width: 530px;
     display: inline-block;
 
@@ -48,7 +51,7 @@
     position: relative;
 
     width: 1300px;
-    height: 350px;
+    min-height: 350px;
     margin: auto;
 
     display: grid;
@@ -91,7 +94,36 @@
 
 
 #contact_form aside {
-    border: 1px solid red;;
+    margin-left: 20px;
+}
+
+#contact_form aside > div {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#contact_form aside .contact_item_text {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact_form aside .contact_item_image {
+    min-width: 50px;
+    max-width: 60px;
+    padding: 12px;
+    margin-right: 20px;
+    border-radius: 5px; 
+
+    display: grid;
+    place-items: center;
+
+    align-self: flex-start;
+
+    background-color: var(--blue_primary);
+}
+
+#contact_form aside img {
+    max-width: 28px;
 }
 
 #contact_form aside p:not(.item_contact) {
@@ -100,12 +132,14 @@
 }
 
 #contact_form aside .item_contact {
+    margin-bottom: 10px;
+    display: block;
+
     font-size: 18px;
     font-weight: bold;
 
     color: rgb(17, 17, 17);
 }
-
 
 #contact_form a {
     position: absolute;

@@ -37,6 +37,11 @@
     #team_workers {
         width: 1100px;
     }
+
+    /* CONTACT */
+    #contact_form{
+        width: 1100px;
+    }
 }
 
 /* 2° BREAKPOINT PARA ADAPTAR SECCION DE SERVICIOS Y TIPS */
@@ -97,6 +102,11 @@
 
     .name {
         padding: 1em 2em;
+    }
+
+    /* CONTACT */
+    #contact_form{
+        width: 900px;
     }
 }
 
@@ -271,6 +281,23 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    /* CONTACT */
+    #contact_form {
+        width: 700px;
+        grid-template-columns: 1fr;
+    }
+
+    #contact_form aside {
+        margin-left: 0;
+        margin-top: 45px;
+    }
+
+    #contact_form a {
+        width: 190px;
+        bottom: 39%;
+        left: calc(100% - 190px);
+    }
+
 }
 
 /* 3° BREAKPOINT PARA ADAPTAR SECCION DE SERVICIOS Y TIPS:
@@ -342,6 +369,30 @@
 
     .name {
         height: 20%;
+    }
+
+    /* CONTACT */
+    #contact_article  section:first-of-type {
+        width: 100%;
+    }
+    #contact_form {
+        max-width: 540px;
+    }
+    #contact_form form {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #contact_form form input {
+        min-width: 540px;
+        max-width: 540px;
+        display: block;
+    }
+    #contact_form form textarea {
+        min-height: 200px;
+    }
+    #contact_form a {
+        bottom: 30%;
     }
 }
 
@@ -417,6 +468,23 @@
 
     #slide_container section p:first-of-type {
         font-size: 14px;
+    }
+
+    /* CONTACT */
+    #contact_form {
+        max-width: 90%
+    }
+    #contact_form form input {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    #contact_form aside {
+        position: relative;
+        top: 85px;
+    }
+    #contact_form a {
+        bottom: 30%;
+        left: 0;
     }
 }
 
