@@ -1,0 +1,66 @@
+@import url(./general.css);
+
+#clients_article {
+    width: 1300px;
+    min-height: 500px;
+    margin: auto;
+    padding: 100px 0;  
+    
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 50px;
+}
+
+#clients_article p:first-of-type {
+    margin-bottom: 8px;
+
+    text-transform: uppercase;
+    color: var(--blue_primary);
+}
+#clients_article h1 {
+    margin-bottom: 8px;
+
+    font-size: 37px;
+    color: #000;
+}
+#clients_article > section:first-child > div {
+    width: 50px;
+    height: 2px;
+    margin-bottom: 15px;
+
+    background-color: var(--blue_primary);
+}
+#clients_article p {
+    color: grey;
+}
+
+
+#clients_article #clients_logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#clients_article #clients_logos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(225, 220, 220, 1);
+}
+
+#clients_article #clients_logos > div:hover {
+    cursor: pointer;
+    background-color: rgba(149, 195, 255, 0.322);
+}
+
+#clients_article #clients_logos > div:hover > img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#clients_article #clients_logos img {
+    max-width: 150px;
+    opacity: .65;
+    transform: scale(.9);
+    transition: all .25s;
+}

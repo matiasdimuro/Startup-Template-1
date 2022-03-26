@@ -42,6 +42,11 @@
     #contact_form{
         width: 1100px;
     }
+
+    /* CLIENTS */
+    #clients_article {
+        width: 1100px;
+    }
 }
 
 /* 2° BREAKPOINT PARA ADAPTAR SECCION DE SERVICIOS Y TIPS */
@@ -106,6 +111,11 @@
 
     /* CONTACT */
     #contact_form{
+        width: 900px;
+    }
+
+    /* CLIENTS */
+    #clients_article {
         width: 900px;
     }
 }
@@ -298,6 +308,19 @@
         left: calc(100% - 190px);
     }
 
+    /* CLIENTS */
+    #clients_article {
+        width: 700px;
+        grid-template-columns: 1fr;
+    }
+
+    #clients_article h1 {
+        font-size: 28px;
+    }
+
+    #clients_article #clients_logos div {
+        height: 150px;
+    }
 }
 
 /* 3° BREAKPOINT PARA ADAPTAR SECCION DE SERVICIOS Y TIPS:
@@ -394,6 +417,19 @@
     #contact_form a {
         bottom: 30%;
     }
+
+    /* CLIENTS */
+    #clients_article {
+        width: 80%;
+    }
+
+    #clients_article #clients_logos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #clients_article h1 {
+        font-size: 28px;
+    }
 }
 
 /* BREAKPOINT: OCULTO BOTON "Get In Touch" DEL HEADER - ACHICO ARTICULO "MENU" Y SU CONTENIDO. */
@@ -485,6 +521,11 @@
     #contact_form a {
         bottom: 30%;
         left: 0;
+    }
+
+    /* FOOTER */
+    footer #copyright p {
+        font-size: 14px;
     }
 }
 
